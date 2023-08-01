@@ -1,0 +1,272 @@
+
+body {
+    /* makes the margin 0*/
+    margin: 0;
+    /*inserts a background image*/
+    background-image: url('../img/pizza background.jpeg');
+    /*background image covers the whole area*/
+    background-size: cover;
+}
+
+header {
+    /*makes a flex container */
+    display: flex;
+    /*makes the flex container item to appear in a row*/
+    flex-direction: row;
+    /*changes the background color*/
+    background-color: #b4a078;
+}
+
+header > nav > h1 {
+    /*adjusts the font size*/
+    font-size: 200%;
+    /*defines the font and changes the font accordingly*/
+    font-family: 'Kablammo', cursive;
+}
+
+header > img {
+    padding: 2%;
+    /*adjusts width and height of the image*/
+    width: 7%;
+    height: auto;
+    /*sets the border radius*/
+    border-radius: 80%;
+}
+.ali{
+    /*makes a flex container */
+    display: flex;
+    flex-direction: row;
+    /*aligns the items of the flex container to the center*/
+    align-items: center;
+    /*it wraps the flex items in the small devices*/
+    flex-wrap: wrap;
+}
+
+.link > li > a{
+    text-decoration: none;
+    /*changes the font color*/
+    color: white;
+}
+
+header > nav > menu {
+    /*makes a flex container */
+    display: flex;
+    /*makes the flex container item to appear in a row*/
+    flex-direction: row;
+    list-style: none;
+    gap: 30%;
+}
+
+.top, .top2, .te {
+    /*changes the font color*/
+    color: yellow;
+    display: flex;
+    /*changes the background color*/
+    background-color: black;
+    margin: auto;
+    /*adjusts the font size*/
+    font-size: 200%;
+    /*defines the style of the border*/
+    border-style: solid;
+    /*sets the border radius*/
+    border-radius: 30%;
+    /*sets the width of the border*/
+    border-width: 10px;
+    /*it changes the border color*/
+    border-color: yellow;
+    justify-content: center;
+}
+
+.footer {
+    /*changes the background color*/
+    background-color: #b4a078;
+}
+
+.con-head {
+    /*makes a flex container */
+    display: flex;
+    justify-content: center;
+    /*adjusts the font size*/
+    font-size: 200%;
+}
+
+.con {
+    /*makes a flex container */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to a new line on smaller screens */
+    gap: 2%;
+    /*adjusts the font size*/
+    font-size: 125%;
+}
+
+.personal, .small, .medium, .large {
+    /*it changes the border color*/
+    border-color: #b4a078;
+    /*defines the style of the border*/
+    border-style: solid;
+    /*sets the border radius*/
+    border-radius: 30%;
+    /*sets the width of the border*/
+    border-width: 10px;
+    /*adjusts width and height*/
+    width: 30%;
+    height: auto;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    header {
+        /*makes the flex container item to appear in a column*/
+        flex-direction: column;
+        /*aligns the items of the flex container to the center*/
+        align-items: center;
+    }
+    header > img {
+        /*adjusts width*/
+        width: 20%;
+    }
+    header > nav > menu {
+        gap: 10%;
+    }
+    .con {
+        /*makes the flex container item to appear in a column*/
+        flex-direction: column;
+        gap: 5%;
+    }
+    .personal, .small, .medium, .large {
+        width: 90%;
+    }
+}
+
+.heading1 {
+    /*changes the font color*/
+    color: yellow;
+    display: flex;
+    /*adjusts width and height of heading*/
+    width: auto;
+    height: auto;
+    margin: auto;
+    /*changes the background color*/
+    background-color: black;
+    /*adjusts the font size*/
+    font-size: 150%;
+    /*defines the style of the border*/
+    border-style: solid;
+    /*sets the border radius*/
+    border-radius: 30%;
+    /*sets the width of the border*/
+    border-width: 10px;
+    /*it changes the border color*/
+    border-color: yellow;
+    /*it aligns the items to the centre in the horizontal axis*/
+    justify-content: center;
+}
+
+
+#fname, #lname, #email, #phone, #size, #made, #quantity, #dipquantity {
+    /*changes the font color*/
+    color: black;
+    display: flex;
+    /*adjusts width and height*/
+    width: auto;
+    height: auto;
+    /*changes the background color*/
+    background-color: yellow;
+    /*adjusts the font size*/
+    font-size: 100%;
+    /*it changes the border color*/
+    border-color: #b4a078;
+    /*defines the style of the border*/
+    border-style: solid;
+    /*sets the border radius*/
+    border-radius: 30%;
+    /*sets the width of the border*/
+    border-width: 5px;
+}
+
+label {
+    /*changes the font color*/
+    color: black;
+    display: flex;
+    margin: auto;
+    /*adjusts width and height*/
+    width: auto;
+    height: auto;
+    /*changes the background color*/
+    background-color: yellow;
+    /*adjusts the font size*/
+    font-size: 100%;
+    /*it changes the border color*/
+    border-color: #b4a078;
+    /*defines the style of the border*/
+    border-style: solid;
+    /*sets the border radius*/
+    border-radius: 30%;
+    /*sets the border width*/
+    border-width: 5px;
+}
+
+.user, .Pizza-Size, .Pizza-Crust, .Quantity, .Dips, .subres {
+    padding-top: 2%;
+    /*makes a flex container */
+    display: flex;
+    /*makes the flex container item to appear in a column*/
+    flex-direction: column;
+    /*it aligns the items to the centre in the horizontal axis*/
+    justify-content: center;
+    /*it aligns the items to the centre in the vertical axis*/
+    align-items: center;
+}
+
+.Sauce, .Cheese, .toppings {
+    /*makes a flex container */
+    display: flex;
+    /*makes the flex container item to appear in a row*/
+    flex-direction: row;
+    /*it leaves space at the top*/
+    padding-top: 2%;
+}
+
+.new {
+    /*changes the background color*/
+    background-color: greenyellow;
+}
+
+/* Media Queries for Responsiveness */
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+    .heading1 {
+        /*adjusts the font size*/
+        font-size: 120%;
+    }
+
+    #fname, #lname, #email, #phone, #size, #made, #quantity, #dipquantity, label {
+        /*adjusts the font size*/
+        font-size: 90%;
+    }
+
+    .user, .Pizza-Size, .Pizza-Crust, .Quantity, .Dips, .subres {
+        /*it leaves space at the top*/
+        padding-top: 1%;
+    }
+
+    .Sauce, .Cheese, .toppings {
+        /*makes the flex container item to appear in a column*/
+        flex-direction: column;
+    }
+}
+
+/* Tablets and small laptops */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .heading1 {
+        /*adjusts the font size*/
+        font-size: 130%;
+    }
+
+    #fname, #lname, #email, #phone, #size, #made, #quantity, #dipquantity, label {
+        /*adjusts the font size*/
+        font-size: 95%;
+    }
+}

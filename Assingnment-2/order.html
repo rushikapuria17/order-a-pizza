@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 2</title>
+    <meta name="description" content="Ordering a Pizza.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- links that imports the font style of the text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- links to connect the stylesheet of css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/js.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/pizza%20logo.jpeg" alt="company logo">
+        <nav class="ali">
+            <h1>Pizzeria</h1>
+            <menu class="link">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="order.html">Order</a>
+                </li>
+            </menu>
+        </nav>
+    </header>
+    <section class="customer">
+        <!--section is used because there are headings used in this part-->
+        <section class="heading1">
+            <!--displays a text in the form of a heading-->
+            <h1>Your Information</h1>
+        </section>
+            <!--the form helps us to use different types of attributes and elements which help us
+             to take input from the user-->
+        <form class="f">
+            <!--Div is used because there are no headings used in this part-->
+            <div class="user">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="fname">First name : </label>
+                <!--input takes the input fromm user in the different form of inputs using type-->
+                <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+                <label class="new" for="lname">Last name : </label>
+                <!--the type text is used to take text input from the user-->
+                <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
+                <label class="new" for="email">Email : </label>
+                <!--the type email is used to take email input or can say it checks for the @
+                sign in the text input from the user-->
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+                <label class="new" for="phone">Phone Number :</label>
+                <!--the type tel takes a telephone number as an input in the form of some
+                paticular pattern defined-->
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       placeholder="999-999-9999" required><br>
+            </div>
+            <!--section is used because there are headings used in this part-->
+            <section class="heading1">
+                <h1>Customize Your Own Delicious Pizza</h1>
+            </section>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Pizza-Size">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="size">Choose A Pizza Size : </label>
+                <select id="size" name="size">
+                    <option>Personal Pizza Slice</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Pizza-Crust">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="made">Choose A Crust : </label>
+                <select id="made" name="made">
+                    <option>Original Hand Tossed</option>
+                    <option>Hand Tossed Thin</option>
+                    <option>Crunchy Thin Crust</option>
+                    <option>Handmade Pan</option>
+                    <option>Gluten Free Crust</option>
+                </select><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Quantity">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="quantity">Quantity (Choose between 1 and 25) : </label>
+                <!--The required attribute makes sure that the value is inputed before submission-->
+                <input type="number" id="quantity" name="quantity" min="1" max="25" required><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Sauce">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="sauce">Choose A Sauce : </label>
+                <input type="radio" id="sauce" name="sauce" value="Pizza Sauce">
+                <label for="sauce">Pizza Sauce</label>
+                <input type="radio" id="sauce" name="sauce" value="BBQ Sauce">
+                <label for="sauce">BBQ Sauce</label>
+                <!--the type radio takes input in the form of radio button which makes the user
+                to choose any one option-->
+                <input type="radio" id="sauce" name="sauce" value="Alfredo Sauce">
+                <label for="sauce">Alfredo Sauce</label>
+                <input type="radio" id="sauce" name="sauce" value="Hearty Marinara Sauce">
+                <label for="sauce">Hearty Marinara Sauce</label>
+                <input type="radio" id="sauce" name="sauce" value="Ranch Dressing">
+                <label for="sauce">Ranch Dressing</label>
+                <!--the type radio takes input in the form of radio button which makes the user
+                to choose any one option-->
+                <input type="radio" id="sauce" name="sauce" value="Garlic Parmesan Sauce">
+                <label for="sauce">Garlic Parmesan Sauce</label><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Cheese">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="cheese type">Choose Cheese Type : </label>
+                <input type="radio" id="cheese type" name="cheese" value="Mozzarella Cheese">
+                <label for="cheese type">Mozzarella Cheese</label>
+                <!--the type radio takes input in the form of radio button which makes the user
+                to choose any one option-->
+                <input type="radio" id="cheese type" name="cheese" value="Provolone Cheese">
+                <label for="cheese type">Provolone Cheese </label>
+                <input type="radio" id="cheese type" name="cheese" value="Cheddar Cheese">
+                <label for="cheese type">Cheddar Cheese </label>
+                <input type="radio" id="cheese type" name="cheese" value="Parmesan Cheese">
+                <label for="cheese type">Parmesan Cheese </label><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="toppings">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="topping">Choose Toppings : </label>
+                <input type="checkbox" id="topping" name="Pepperoni" value="Pepperoni">
+                <label for="topping">Pepperoni</label>
+                <!--the type checkbox takes input in the form of checkboxes which makes the
+                user to choose more than one option-->
+                <input type="checkbox" id="topping" name="Sausage" value="Sausage">
+                <label for="topping">Sausage</label>
+                <input type="checkbox" id="topping" name="Chicken" value="Chicken">
+                <label for="topping">Chicken</label>
+                <input type="checkbox" id="topping" name="Bacon" value="Bacon">
+                <label for="topping">Bacon</label>
+                <!--the type checkbox takes input in the form of checkboxes which makes the
+                user to choose more than one option-->
+                <input type="checkbox" id="topping" name="Black Olives" value="Black Olives">
+                <label for="topping">Black Olives</label>
+                <input type="checkbox" id="topping" name="Hot Banana Peppers" value="Hot Banana Peppers">
+                <label for="topping">Hot Banana Peppers</label>
+                <input type="checkbox" id="topping" name="Mushroom" value="Mushroom">
+                <label for="topping">Mushroom</label>
+                <!--the type checkbox takes input in the form of checkboxes which makes the
+                user to choose more than one option-->
+                <input type="checkbox" id="topping" name="Onions" value="Onions">
+                <label for="topping">Onions</label>
+                <input type="checkbox" id="topping" name="Tomatoes" value="Tomatoes">
+                <label for="topping">Tomatoes</label>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="Dips">
+                <!--label is used to label the type of form elements used-->
+                <label class="new" for="dipquantity">Select Dips : </label><br>
+                <label for="dipquantity">Garlic Dipping Sauce(Choose between 0 and 25):</label>
+                <!--the type number is used for taking a integer number from the user-->
+                <input type="number" id="dipquantity" name="dipquantity" min="0" max="25" required><br>
+                <label for="dipquantity">Ranch Cup(Choose between 0 and 25):</label>
+                <input type="number" id="dipquantity" name="dipquantity" min="0" max="25" required><br>
+                <label for="dipquantity">Marinara Sauce Cup(Choose between 0 and 25):</label>
+                <!--the type number is used for taking a integer number from the user-->
+                <input type="number" id="dipquantity" name="dipquantity" min="0" max="25" required><br>
+            </div>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="subres">
+                <!--the button is used to form a button which works with the defined type-->
+                <button class="new" type="submit" value="Submit"> Submit </button>
+                <!--the type reset resets all the input made by the user-->
+                <button class="new" type="reset" value="Reset"> Reset </button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <!--section is used because there are headings used in this part-->
+        <section>
+            <h1 class="con-head">Contact Us</h1>
+            <!--Div is used because there are no headings used in this part-->
+            <div class="con">
+                <p>Email: pizzeria@gmail.com</p>
+                <p>Contact: +1(647)-333-4444</p>
+                <p>Since 2023</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
